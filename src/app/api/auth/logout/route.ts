@@ -1,8 +1,9 @@
 import { NextResponse } from "next/server";
+
 import { deleteSession } from "@/server/auth";
 
 export async function POST(req: Request) {
-  const cookie = req.headers.get("cookie") || "";
+  const cookie = req.headers.get("cookie") ?? "";
   const token = cookie
     .split("; ")
     .map((c) => c.split("="))
@@ -19,4 +20,3 @@ export async function POST(req: Request) {
   );
   return res;
 }
-

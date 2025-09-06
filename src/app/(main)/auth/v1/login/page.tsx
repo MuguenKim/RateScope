@@ -16,7 +16,9 @@ export default function LoginV1() {
             <Command className="text-primary-foreground mx-auto size-12" />
             <div className="space-y-2">
               <h1 className="text-primary-foreground text-5xl font-light">Welcome to {APP_CONFIG.name}</h1>
-              <p className="text-primary-foreground/80 text-xl">Sign in to access pricing, liquidity, and compliance dashboards.</p>
+              <p className="text-primary-foreground/80 text-xl">
+                Sign in to access pricing, liquidity, and compliance dashboards.
+              </p>
             </div>
           </div>
         </div>
@@ -27,7 +29,8 @@ export default function LoginV1() {
           <div className="space-y-4 text-center">
             <div className="font-medium tracking-tight">Sign in to your account</div>
             <div className="text-muted-foreground mx-auto max-w-xl">
-              Use your work email to continue. {APP_CONFIG.name} keeps your FX operations in one place — pricing guardrails, live cash visibility, and audit-ready compliance.
+              Use your work email to continue. {APP_CONFIG.name} keeps your FX operations in one place — pricing
+              guardrails, live cash visibility, and audit-ready compliance.
             </div>
           </div>
           <div className="space-y-4">
