@@ -6,6 +6,7 @@ import {
   Banknote,
   Gauge,
   ClipboardList,
+  Upload,
   Settings,
   type LucideIcon,
 } from "lucide-react";
@@ -46,6 +47,7 @@ export const sidebarItems: NavGroup[] = [
       { title: "Pricing", url: "/dashboard/pricing", icon: Gauge },
       { title: "Compliance", url: "/dashboard/compliance", icon: Fingerprint },
       { title: "Reconciliation", url: "/dashboard/reconciliation", icon: ClipboardList },
+      { title: "Import", url: "/dashboard/import", icon: Upload },
       { title: "Admin", url: "/dashboard/admin", icon: Users },
     ],
   },
