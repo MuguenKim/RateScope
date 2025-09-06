@@ -3,12 +3,12 @@ import packageJson from "../../package.json";
 const currentYear = new Date().getFullYear();
 
 export const APP_CONFIG = {
-  name: "Studio Admin",
+  name: "RateScope",
   version: packageJson.version,
-  copyright: `© ${currentYear}, Studio Admin.`,
+  copyright: `© ${currentYear}, RateScope.`,
   meta: {
-    title: "Studio Admin - Modern Next.js Dashboard Starter Template",
+    title: "RateScope — Exchange Ops & Pricing Intelligence",
     description:
-      "Studio Admin is a modern, open-source dashboard starter template built with Next.js 15, Tailwind CSS v4, and shadcn/ui. Perfect for SaaS apps, admin panels, and internal tools—fully customizable and production-ready.",
+      "RateScope turns daily buy/sell logs into live dashboards, cash visibility, pricing guardrails, and automated compliance & EoD reconciliation. Built on Next.js 15, Tailwind v4, and shadcn/ui.",
   },
 };
