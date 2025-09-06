@@ -125,4 +125,3 @@ export async function getUserIdForToken(token: string | undefined) {
   const sessions = await readSessions();
   return sessions[token]?.userId ?? null;
 }
-

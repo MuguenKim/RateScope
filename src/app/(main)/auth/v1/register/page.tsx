@@ -15,7 +15,8 @@ export default function RegisterV1() {
           <div className="space-y-4 text-center">
             <div className="font-medium tracking-tight">Create your {APP_CONFIG.name} account</div>
             <div className="text-muted-foreground mx-auto max-w-xl">
-              Unlock real-time FX ops — live dashboards, pricing guardrails, and automated compliance. Use a work email if possible.
+              Unlock real-time FX ops — live dashboards, pricing guardrails, and automated compliance. Use a work email
+              if possible.
             </div>
           </div>
           <div className="space-y-4">

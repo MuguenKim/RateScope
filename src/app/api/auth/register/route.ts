@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+
 import { createSession, createUser } from "@/server/auth";
 
 export async function POST(req: Request) {
@@ -23,4 +24,3 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: message }, { status: 400 });
   }
 }
-

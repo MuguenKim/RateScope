@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+
 import { createSession, verifyLogin } from "@/server/auth";
 
 export async function POST(req: Request) {
@@ -25,4 +26,3 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: "Login failed" }, { status: 400 });
   }
 }
-

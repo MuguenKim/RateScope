@@ -1,7 +1,8 @@
 "use client";
 
-import { EllipsisVertical, CircleUser, CreditCard, MessageSquareDot, LogOut } from "lucide-react";
 import { useRouter } from "next/navigation";
+
+import { EllipsisVertical, CircleUser, CreditCard, MessageSquareDot, LogOut } from "lucide-react";
 import { toast } from "sonner";
 
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
@@ -36,7 +37,7 @@ export function NavUser({
       toast.success("Logged out");
       router.push("/auth/v1/login");
     } catch (e: any) {
-      toast.error(e?.message || "Logout failed");
+      toast.error(e?.message ?? "Logout failed");
     }
   }
 

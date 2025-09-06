@@ -16,7 +16,18 @@ const compat = new FlatCompat({
 /** @type {import('eslint').Linter.Config[]} */
 export default [
   { files: ["**/*.{js,mjs,cjs,ts,jsx,tsx}"] },
-  { ignores: [".github/", ".husky/", "node_modules/", ".next/", "src/components/ui", "*.config.ts", "*.mjs"] },
+  {
+    ignores: [
+      ".github/",
+      ".husky/",
+      "node_modules/",
+      ".next/",
+      "src/components/ui",
+      "*.config.ts",
+      "*.mjs",
+      "next-env.d.ts",
+    ],
+  },
   {
     languageOptions: {
       globals: globals.browser,
@@ -28,6 +39,11 @@ export default [
     settings: {
       react: {
         version: "detect",
+      },
+      "import/resolver": {
+        typescript: {
+          project: "./tsconfig.json",
+        },
       },
     },
     plugins: {
